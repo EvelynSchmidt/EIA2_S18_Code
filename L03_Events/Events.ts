@@ -1,6 +1,6 @@
 namespace L02 {
     window.addEventListener("load", init);
-
+ 
     function init(_event: Event): void {
         console.log(_event);
         let fieldset: HTMLFieldSetElement = document.getElementsByTagName("fieldset")[0];
