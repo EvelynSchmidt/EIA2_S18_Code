@@ -1,8 +1,8 @@
 var L06_SendData;
 (function (L06_SendData) {
     window.addEventListener("load", init);
-    let adress = "http://localhost:8100";
-    //let adress: string = "https://eia2-nodetest.herokuapp.com";
+    let address = "http://localhost:8100";
+    //let address: string = "https://eia2-nodetest.herokuapp.com";
     function init(_event) {
         setupColorDivs();
     }
@@ -21,7 +21,7 @@ var L06_SendData;
     }
     function sendRequestWithCustomData(_color) {
         let xhr = new XMLHttpRequest();
-        xhr.open("GET", adress + "?color=" + _color, true);
+        xhr.open("GET", address + "?color=" + _color, true);
         xhr.addEventListener("readystatechange", handleStateChange);
         xhr.send();
     }
