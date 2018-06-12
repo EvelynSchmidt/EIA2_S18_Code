@@ -4,7 +4,7 @@ var L09_Canvas;
     let crc2;
     function init(_event) {
         let canvas = document.getElementsByTagName("canvas")[0];
-        crc2 = canvas.getContext("2d");
+        crc2 = canvas.getContext(x);
         console.log(crc2);
         crc2.fillStyle = "rgba(255,0,0,0.5)";
         crc2.fillRect(50, 50, 100, 50);
