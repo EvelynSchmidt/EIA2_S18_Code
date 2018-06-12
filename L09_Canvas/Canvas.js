@@ -1,5 +1,5 @@
-var L08_Canvas;
-(function (L08_Canvas) {
+var L09_Canvas;
+(function (L09_Canvas) {
     window.addEventListener("load", init);
     let crc2;
     function init(_event) {
@@ -29,5 +29,5 @@ var L08_Canvas;
         crc2.stroke();
         crc2.fill();
     }
-})(L08_Canvas || (L08_Canvas = {}));
+})(L09_Canvas || (L09_Canvas = {}));
 //# sourceMappingURL=Canvas.js.map

@@ -1,4 +1,4 @@
-namespace L08_Canvas {
+namespace L09_Canvas {
     window.addEventListener("load", init);
     let crc2: CanvasRenderingContext2D;
 
