@@ -1,26 +1,26 @@
 namespace L11_Inheritance {
     export class DavidStar {
-        x: number;
-        y: number;
-        color: string;
+        protected x: number;
+        protected y: number;
+        protected color: string;
 
-        constructor(_color: string) {
+        public constructor(_color: string) {
             this.setRandomPosition();
             this.color = _color;
         }
 
-        setRandomPosition(): void {
+        private setRandomPosition(): void {
             this.x = Math.random() * crc2.canvas.width;
             this.y = Math.random() * crc2.canvas.height;
         }
 
         // declare method without keyword function
-        move(): void {
+        public move(): void {
             this.x += Math.random() * 4 - 2;
             this.y += Math.random() * 4 - 2;
         }
 
-        draw(): void {
+        public draw(): void {
             crc2.beginPath();
             crc2.moveTo(this.x, this.y - 20);
             crc2.lineTo(this.x + 20, this.y + 10);
